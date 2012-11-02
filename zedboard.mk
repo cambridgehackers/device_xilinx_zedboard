@@ -14,11 +14,11 @@
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_PACKAGES += gralloc.zedboard hwcomposer.zedboard
+PRODUCT_PACKAGES += gralloc.zynq hwcomposer.zynq
 ## PRODUCT_PACKAGES += busybox
 
 PRODUCT_NAME := zedboard
-TARGET_BOOTLOADER_BOARD_NAME := zedboard
+TARGET_BOOTLOADER_BOARD_NAME := zynq
 TARGET_BOARD_PLATFORM := zynq
 
 PRODUCT_DEVICE := zedboard
@@ -28,3 +28,6 @@ PRODUCT_MODEL := Mini for zynq zedboard
 # default is nosdcard, S/W button enabled in resource
 DEVICE_PACKAGE_OVERLAYS := device/generic/armv7-a-neon/overlay
 PRODUCT_CHARACTERISTICS := nosdcard
+
+PRODUCT_COPY_FILES := \
+	device/xilinx/zedboard/init.xilinxzynqplatform.rc:root/init.xilinxzynqplatform.rc

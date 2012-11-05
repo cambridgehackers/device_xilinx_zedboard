@@ -20,6 +20,12 @@ BUILD_EMULATOR_OPENGL := false
 # the GLES renderer disables itself if host GL acceleration isn't available.
 USE_OPENGL_RENDERER := false
 
+TARGET_PREBUILT_KERNEL :=
+KERNEL_DEFCONFIG := digilent_zed_defconfig
+DEVICE_TREE_SRC := digilent-zed.dts
+DEVICE_TREE_BIN := devicetree_ramdisk.dtb
+RAMDISK_IMAGE := ramdisk8M.image.gz
+RAMDISK_SIZE_K := 256
 
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 ARGET_USERIMAGES_USE_EXT4 := true

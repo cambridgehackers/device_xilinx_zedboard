@@ -7,7 +7,9 @@
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := true
 
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := cortex-a9
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -43,4 +45,4 @@ MINIMAL_FONT_FOOTPRINT := true
 # Some framework code requires this to enable BT
 BOARD_HAVE_BLUETOOTH := false
 
-WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_USE_LEGACY_UI := true

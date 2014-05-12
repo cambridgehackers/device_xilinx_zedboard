@@ -29,5 +29,5 @@ PRODUCT_MODEL := Mini for zynq zedboard
 DEVICE_PACKAGE_OVERLAYS := device/generic/armv7-a-neon/overlay
 PRODUCT_CHARACTERISTICS := nosdcard
 
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	device/xilinx/zedboard/init.xilinxzynqplatform.rc:root/init.xilinxzynqplatform.rc

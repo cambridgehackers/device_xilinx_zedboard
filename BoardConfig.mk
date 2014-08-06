@@ -23,8 +23,8 @@ BUILD_EMULATOR_OPENGL := false
 USE_OPENGL_RENDERER := false
 
 TARGET_PREBUILT_KERNEL :=
-KERNEL_DEFCONFIG := digilent_zed_defconfig
-DEVICE_TREE_SRC := digilent-zed.dts
+KERNEL_DEFCONFIG := xilinx_zynq_portal_defconfig
+DEVICE_TREE_SRC := zynq-zedboard.dts
 DEVICE_TREE_BIN := devicetree_ramdisk.dtb
 RAMDISK_IMAGE := ramdisk8M.image.gz
 RAMDISK_SIZE_K := 256
